@@ -6,10 +6,10 @@ const char* getDiskSize(int n) {
 
 void hanoi(int n, char* FIRST, char* THIRD, char* SECOND) {
     if (n == 1) {
-        printf("Put the %s disk from |%s| to |%s|.\n", getDiskSize(n), FIRST, THIRD);
+        printf("Put the %s disk from |%s| in the |%s|.\n", getDiskSize(n), FIRST, THIRD);
     } else {
         hanoi(n - 1, FIRST, SECOND, THIRD);
-        printf("Put the %s disk from |%s| to |%s|\n", getDiskSize(n), FIRST, THIRD);
+        printf("Put the %s disk from |%s| in the |%s|\n", getDiskSize(n), FIRST, THIRD);
         hanoi(n - 1, SECOND, THIRD, FIRST);
     }
 }
