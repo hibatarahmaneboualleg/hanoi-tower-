@@ -1,6 +1,6 @@
 #include <stdio.h>
 const char* getDiskSize(int n) {
-    const char* sizes[] = {"small", "medium", "large", "huge"}; 
+    const char* sizes[] = {"small", "medium", "large"}; 
     return sizes[n - 1];
 }
 
