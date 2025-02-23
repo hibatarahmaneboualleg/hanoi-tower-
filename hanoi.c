@@ -5,7 +5,7 @@ const char* getDiskSize(int n) {
 }
 
 void hanoi(int n, char* FIRST, char* THIRD, char* SECOND) {
-    if (n == 0) {
+    if (n == 0) {return;
     } else {
         hanoi(n - 1, FIRST, SECOND, THIRD);
         printf("Put the %s disk from |%s| in the |%s|\n", getDiskSize(n), FIRST, THIRD);
